@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>HTML to PDF Format was removed</title>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-C7DYLW7DET"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-C7DYLW7DET');
+  gtag('event', 'uninstall', {extension: 'html-to-pdf-format'});
+  function why(reason) {
+    gtag('event', 'uninstall_' + reason, {extension: 'html-to-pdf-format'}); // one event per reason: shows up in GA Events as is
+    document.querySelector('main').innerHTML = '<h1>Thank you!</h1>';
+  }
+</script>
+<style>
+  :root { --bg:#fff; --text:#1f2328; --line:#d0d7de; }
+  @media (prefers-color-scheme: dark) { :root { --bg:#1f1f1f; --text:#e8eaed; --line:#3c4043; } }
+  body { margin:0; font:16px/1.5 system-ui, sans-serif; background:var(--bg); color:var(--text); }
+  main { max-width:520px; margin:0 auto; padding:48px 16px; text-align:center; }
+  button { display:block; width:100%; margin:8px 0; padding:12px; font:inherit; cursor:pointer;
+           background:none; color:inherit; border:1px solid var(--line); border-radius:8px; }
+</style>
+</head>
+<body>
+<main>
+  <h1>Why did you remove HTML to PDF Format?</h1>
+  <button onclick="why('cut_off')">Part of the page was missing or blank</button>
+  <button onclick="why('layout')">The PDF didn't look like the page</button>
+  <button onclick="why('no_file')">Nothing was saved</button>
+  <button onclick="why('bar')">The “debugging” bar worried me</button>
+  <button onclick="why('no_need')">I only needed it once</button>
+</main>
+</body>
+</html>
